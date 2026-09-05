@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Records</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🎓 AttendEase</div>
+
+    <nav>
+
+        <a href="index.html">Dashboard</a>
+
+        <a href="students.html">Students</a>
+
+        <a href="attendance.html">Attendance</a>
+
+        <a class="active" href="records.html">
+            Records
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="page-title">
+
+        <div>
+            <h1>Attendance Records</h1>
+            <p>View student attendance history.</p>
+        </div>
+
+        <button class="btn">
+            📥 Download Report
+        </button>
+
+    </div>
+
+    <section class="table-container">
+
+        <div class="filters">
+
+            <input
+                type="text"
+                placeholder="🔍 Search student..."
+            >
+
+            <input type="date">
+
+            <select>
+
+                <option>All Departments</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+
+            </select>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Date</th>
+                    <th>Roll No</th>
+                    <th>Student Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>05-09-2026</td>
+                    <td>CS101</td>
+                    <td>Rahul Kumar</td>
+                    <td>Computer Science</td>
+                    <td>
+                        <span class="badge present-badge">
+                            Present
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>05-09-2026</td>
+                    <td>CS102</td>
+                    <td>Priya Sharma</td>
+                    <td>Computer Science</td>
+                    <td>
+                        <span class="badge present-badge">
+                            Present
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>05-09-2026</td>
+                    <td>IT103</td>
+                    <td>Arun Kumar</td>
+                    <td>Information Technology</td>
+                    <td>
+                        <span class="badge absent-badge">
+                            Absent
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+</body>
+</html>

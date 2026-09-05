@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance - AttendEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🎓 AttendEase</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="students.html">Students</a>
+        <a class="active" href="attendance.html">Attendance</a>
+        <a href="records.html">Records</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="page-title">
+
+        <div>
+            <h1>Mark Attendance</h1>
+            <p>Record student attendance for today.</p>
+        </div>
+
+        <div>
+            <label>Date</label>
+            <input type="date" id="attendanceDate">
+        </div>
+
+    </div>
+
+    <section class="table-container">
+
+        <div class="table-header">
+
+            <h2>Today's Attendance</h2>
+
+            <div>
+
+                <button class="present-all"
+                        onclick="markAll('Present')">
+                    ✓ Mark All Present
+                </button>
+
+                <button class="absent-all"
+                        onclick="markAll('Absent')">
+                    ✕ Mark All Absent
+                </button>
+
+            </div>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>S.No</th>
+                    <th>Roll Number</th>
+                    <th>Student Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>CS101</td>
+                    <td>Rahul Kumar</td>
+                    <td>Computer Science</td>
+                    <td>
+                        <div class="status-buttons">
+                            <button class="status present"
+                                    onclick="setStatus(this)">
+                                ✓ Present
+                            </button>
+
+                            <button class="status absent"
+                                    onclick="setStatus(this)">
+                                ✕ Absent
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>CS102</td>
+                    <td>Priya Sharma</td>
+                    <td>Computer Science</td>
+                    <td>
+                        <div class="status-buttons">
+                            <button class="status present"
+                                    onclick="setStatus(this)">
+                                ✓ Present
+                            </button>
+
+                            <button class="status absent"
+                                    onclick="setStatus(this)">
+                                ✕ Absent
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>IT103</td>
+                    <td>Arun Kumar</td>
+                    <td>Information Technology</td>
+                    <td>
+                        <div class="status-buttons">
+                            <button class="status present"
+                                    onclick="setStatus(this)">
+                                ✓ Present
+                            </button>
+
+                            <button class="status absent"
+                                    onclick="setStatus(this)">
+                                ✕ Absent
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="save-area">
+
+            <button class="btn"
+                    onclick="saveAttendance()">
+                💾 Save Attendance
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
